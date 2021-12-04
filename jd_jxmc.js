@@ -67,8 +67,8 @@ if ($.isNode()) {
         }
         await $.wait(2000);
     }
-    if(new Date().getHours() !== 9 && new Date().getHours() !== 10){
-        console.log('\n脚本早上9点到10点直接执行，才会执行账号内互助');
+    if(new Date().getHours() !== 6 && new Date().getHours() !== 12){
+        console.log('\n脚本早上6点到12点直接执行，才会执行账号内互助');
         return ;
     }
     if (process.env.JXMC_RP != 'false' && flag_hb) {
